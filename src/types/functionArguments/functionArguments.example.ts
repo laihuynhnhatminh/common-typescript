@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { FunctionArguments } from "./functionArguments.type.js";
 
@@ -12,4 +13,4 @@ export function add(a: number, b: number): number {
 export type AddArgs = FunctionArguments<typeof add>;
 // AddArgs will be of type [number, number]
 
-// const result = wrap(add, 5, 10); // result is 15, and types are checked
+const result = wrap(add, 5, 10); // result is 15, and types are checked
